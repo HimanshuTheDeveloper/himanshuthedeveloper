@@ -84,6 +84,14 @@
 @media screen and (max-width: 600px)
 {
   
+    #wallpaper
+    {
+        background-position-x: -150px;
+    }
+    .text-container{
+        top: 75%;
+        right: 10%;
+    }
 }
 @media screen and (max-width: 400px)
 {   
