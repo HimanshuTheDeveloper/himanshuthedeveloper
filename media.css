@@ -8,7 +8,7 @@
     }
     #hamburger{
         position:relative;
-        /* top:1%; */
+        top:-40%;
         left:96%;
         font-size:20px;
     }
@@ -20,7 +20,7 @@
         margin:0;
         z-index:8;
         display:none;
-}
+    }
     
     .nav-menu ul li{
         display:block;
@@ -57,13 +57,30 @@
      left:0;
     
     }
+    
     .about{
 
         flex-direction:column;
     }
-    .about .box{
-     flex-direction:column;
+    .box{
+        flex-direction:column;
     }
+    .box-1{
+        width:100%;
+    }
+    .box-2{
+        width:100%;
+    }
+    .row{
+        flex-direction:column;
+        width:100%;
+        
+    }
+    .col{
+        width:100%;
+    }
+
+    
 }
 
 
@@ -73,7 +90,9 @@
 }
 @media screen and (max-width: 400px)
 {   
-  
+    #wallpaper{
+        background-position-x: -200px;
+    }
      
 }
 
