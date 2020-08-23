@@ -1,28 +1,28 @@
-const nav = document.querySelector('nav');
-const hem = document.querySelector('#hamburger');
-const navItem = document.querySelectorAll('.navItem');
+// const nav = document.querySelector('nav');
+// const hem = document.querySelector('#hamburger');
+// const navItem = document.querySelectorAll('.navItem');
 
-hem.addEventListener('click', ()=>{
-    console.log(hem.innerText);
-    if(hem.innerText == "☰")
-    {
-        hem.innerText = '✖';
-        navItem.forEach((element)=>{
-            element.style.height = '60px';
-            element.style.opacity = '1';
-            element.style.pointerEvents = 'all';
-        });
-    }
-    else
-    {
-        hem.innerText = '☰';
-        navItem.forEach((element)=>{
-            element.style.height = '0';
-            element.style.opacity = '0';
-            element.style.pointerEvents = 'none';
-        });
-    } 
-});
+// hem.addEventListener('click', ()=>{
+//     console.log(hem.innerText);
+//     if(hem.innerText == "☰")
+//     {
+//         hem.innerText = '✖';
+//         navItem.forEach((element)=>{
+//             element.style.height = '60px';
+//             element.style.opacity = '1';
+//             element.style.pointerEvents = 'all';
+//         });
+//     }
+//     else
+//     {
+//         hem.innerText = '☰';
+//         navItem.forEach((element)=>{
+//             element.style.height = '0';
+//             element.style.opacity = '0';
+//             element.style.pointerEvents = 'none';
+//         });
+//     } 
+// });
 
 
 const roles = [
@@ -57,3 +57,73 @@ const changeRole = ()=>
         }
     }, len * 100);
 };
+
+hamburgerOn = true;
+
+const changeHamburgerState = (event) => {
+    event.preventDefault();
+    hamburgerOn = !hamburgerOn;
+    // console.log(hamburgerOn);
+    if(hamburgerOn)
+    {
+        let nav  = document.querySelector('nav');
+        nav.style.width = '22%';
+        let main = document.querySelector('.main').style;
+        main.left = '22%';
+        main.width = '78%';
+
+
+        let items = nav.children;
+
+
+
+
+        Object.keys(items).forEach(function(key) {
+            // console.log(key, items[key]);
+
+            if(key != 0)
+            {
+                setTimeout(()=>{
+
+                    items[key].style.display = 'block';
+                }, 1000);
+            }
+            else
+            {
+                items[key].style.transform = 'translateX(0px)';
+                items[key].innerHTML = '<i class="fa fa-close"></i>';
+            }
+        });
+    }
+    else
+    {
+        let nav  = document.querySelector('nav');
+        nav.style.width = 0;
+        let main = document.querySelector('.main').style;
+        main.left = 0;
+        main.width = '100%';
+
+
+        let items = nav.children;
+
+
+
+
+        Object.keys(items).forEach(function(key) {;
+
+            if(key != 0)
+            {
+                items[key].style.display = 'none';
+            }
+            else
+            {
+                items[key].style.transform = 'translateX(5px)';
+                items[key].innerHTML = '<i class="fa fa-bars"></i>';
+
+            }
+        });
+    }
+}
+
+
+document.querySelector('#hamburger').addEventListener('click', changeHamburgerState);
