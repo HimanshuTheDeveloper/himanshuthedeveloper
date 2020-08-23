@@ -70,17 +70,15 @@ nav{
     width:120px;
     border-radius:100%;
     
-   
 }
 #name{
     /* background:rgb(226, 209, 209); */
     text-decoration:none;
-    justify-content: space-around;
+    justify-self: space-around;
     color:white;
     font-size:25px;
-    font-family: cursive;
+    font-family: sans-serif;
     letter-spacing: 2px;;
-    
 }
 
 .social-links{
