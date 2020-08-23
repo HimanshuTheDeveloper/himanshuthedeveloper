@@ -217,7 +217,7 @@ nav{
     height:100%;
     background-repeat: no-repeat;
     /* background-image: url('/media/wallpaper-1.jpeg'); */
-    background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.438)) ,url("/media/wallpaper-1.jpeg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.438)) ,url("./media/wallpaper-1.jpeg");
     background-size: cover;
 }
 /* .overlay{

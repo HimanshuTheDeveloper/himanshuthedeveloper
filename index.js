@@ -67,10 +67,20 @@ const changeHamburgerState = (event) => {
     if(hamburgerOn)
     {
         let nav  = document.querySelector('nav');
-        nav.style.width = '22%';
+        
         let main = document.querySelector('.main').style;
-        main.left = '22%';
-        main.width = '78%';
+        
+        
+
+        if(window.innerWidth < 900){
+            nav.style.width = '100%';
+            main.width = '100%';
+        }
+        else{
+            nav.style.width = '22%';
+            main.left = '22%';
+            main.width = '78%';
+        }
 
 
         let items = nav.children;
@@ -109,7 +119,7 @@ const changeHamburgerState = (event) => {
 
 
 
-        Object.keys(items).forEach(function(key) {;
+        Object.keys(items).forEach(function(key) {
 
             if(key != 0)
             {
@@ -127,3 +137,19 @@ const changeHamburgerState = (event) => {
 
 
 document.querySelector('#hamburger').addEventListener('click', changeHamburgerState);
+
+// if(window.innerWidth < 900){
+//     let navItem = document.querySelectorAll('.nav-menu ul li');
+
+
+//     Object.keys(navItem).forEach(function(key) {
+//         let item = navItem[key];
+//         setTimeout(()=>{
+
+//             item.addEventListener('click', changeHamburgerState);
+//         }, 1000);
+
+//     });
+
+    
+// }
