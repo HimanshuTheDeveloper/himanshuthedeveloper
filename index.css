@@ -22,7 +22,7 @@ html {
     --text-color:rgb(255, 175, 27);
     --title-color:rgb(19, 21, 98);
 
-    --main-font: arial;
+    --main-font: sans-serif
     --text-font: 'Red Rose', cursive;
     --title-font: 'Raleway', sans-serif;
 }
@@ -31,11 +31,6 @@ html {
     width:100%;
     
 }
-/* nav-main{
-    position:fixed;
-    overflow:hidden;
-
-} */
 
 /* css for navbar */
 
@@ -54,7 +49,7 @@ nav{
 }
 #hamburger
 {
-    color:rgb(19, 226, 30);
+    color:var(--text-color);
     height: 10px;
     pointer-events: all;
     text-decoration:none;
@@ -92,6 +87,11 @@ nav{
     height: 50px; */
     /* background:blue; */
     margin: 0 auto;
+    padding:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
     /* align-items: center;
     justify-items: center; */
     
@@ -100,19 +100,21 @@ nav{
 {
     text-decoration: none;
     color: #ffffff;
+    /* font-size:20px; */
+   
     /* transition: ease color 3s; */
 }
 
 .social-links a:hover{
     /* color:rgb(82, 177, 255); */
-    color:var(--main-color);
+    color:var(--text-color);
     
 }
 
 .social-links i{
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
-    margin-left:0px;
+    margin-left: 8px;
 }
 
 
@@ -149,28 +151,28 @@ nav{
     
 }
 .nav-menu ul li a:hover{
-    color:var(--main-color);
+    color:var(--text-color);
 }
 .list-item{
     margin-left:15px;
 }
 .list-item:hover{
     cursor:pointer;
-    color:white;
+    color:var(--text-color);
     transition:ease all 0.3s;
  
     
 }
 
 .active{
-    color:white;
+    color:var(--text-color);
     /* color:var(--main-color); */
 
 }
 
 .active-icon{
     /* color:white; */
-    color:var(--main-color);
+    color:var(--text-color);
 
 }
 
@@ -184,13 +186,10 @@ nav{
     font-family:cursive;
 }
 #foot{
-    color:var(--main-color);
+    color:var(--text-color);
     font-size:18px;
 }
-#foot:hover{
-    cursor:pointer;
-    color:var(--text-color);
-}
+
 
 /* css for navbar end */
 
@@ -216,7 +215,7 @@ nav{
     width:100%;
     height:100%;
     background-repeat: no-repeat;
-    background-image: url('/media/wallpaper-1.jpeg');
+    background-image: url('./media/wallpaper-1.jpeg');
     /* background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.438)) ,url("./media/wallpaper-1.jpeg"); */
     background-size: cover;
 }
@@ -236,9 +235,9 @@ nav{
 #overlay-text{
     font-weight:normal;
     color:white;
-    font-size:50px;
+    font-size:3rem;
     /* font-family:var(--title-font); */
-    font-family:cursive;
+    font-family:arial;
     
 }
 #overlay-desc{
@@ -251,7 +250,7 @@ nav{
 }
 #role{
   
-    color:var(--main-color); 
+    color:var(--text-color); 
     margin: 11px 0 23px;
     font-size: 30px;
     text-transform:uppercase;
@@ -259,10 +258,6 @@ nav{
   
     /* position:relative; */
     
-}
-#role:hover{
-    cursor:pointer;
-    color:var(--text-color)
 }
 
 
