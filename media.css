@@ -89,16 +89,38 @@
         background-position-x: -150px;
     }
     .text-container{
-        top: 75%;
+        top: 70%;
         right: 10%;
+    }
+    #about-title{
+        text-align:center;
+        margin-top:15px;
+        text-decoration: underline;
+    }
+    .row{
+        margin-top:10px;
+    }
+    .resume-box{
+        flex-direction:column;
+    }
+    .resume-box1{
+        width: 96%;
+        padding: 2%;
+
     }
 }
 @media screen and (max-width: 400px)
 {   
-    #wallpaper{
-        /* background-position-x: -200px; */
+    
+    #wallpaper
+    {
+        background-position-x: -180px;
     }
-     
+    .text-container{
+        top: 60%;
+        right: 10%;
+    }
+   
 }
 
 
