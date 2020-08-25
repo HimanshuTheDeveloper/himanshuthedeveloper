@@ -3,12 +3,7 @@
     nav{
         width:100%;
     }
-    /* #hamburger{
-        position:relative;
-        top:-40%;
-        left:96%;
-        font-size:20px;
-    } */
+ 
     
     nav ul{
       
@@ -30,16 +25,7 @@
         text-align: center;
 
     }
-    /* nav .footer{
-        display:none;
-    } */
-    /* #profile{
-        display:none;
-    }
-    #footer{
-        display:none;
-    } */
-    
+ 
     
     .container
     {
