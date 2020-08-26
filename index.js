@@ -58,6 +58,8 @@ const changeRole = ()=>
     }, len * 100);
 };
 
+
+
 hamburgerOn = true;
 
 const changeHamburgerState = (event) => {
@@ -73,7 +75,7 @@ const changeHamburgerState = (event) => {
         
 
         if(window.innerWidth < 900){
-            nav.style.width = '100%';
+            nav.style.width = '75%';
             main.width = '100%';
         }
         else{
