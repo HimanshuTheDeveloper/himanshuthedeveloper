@@ -19,7 +19,7 @@ html {
 
 :root {
     --main-color:rgb(82, 177, 255);
-    --text-color:rgb(255, 175, 27);
+    --text-color:rgb(255, 204, 65);
     --title-color:rgb(19, 21, 98);
 
     --main-font: sans-serif
@@ -36,7 +36,7 @@ html {
 
 nav{
     width:22%;
-    height:100%;
+    height:100vh;
     background: #000;
     text-align: center;
     display: flex;
@@ -56,7 +56,6 @@ nav{
     align-self: flex-end;
     margin: 5px;
     position: relative;
-    /* transform: translateX(30px); */
     z-index: 20;
     transition: transform 1s ease;
 }
@@ -65,20 +64,15 @@ nav{
     height:28%;
     width:80%;
     padding:2%;
-    background:rgb(22, 22, 22);
+    /* background:rgb(0, 0, 0); */
     border-radius:20px;
-    /* border:inset 2px solid black;  */
 }
 .profile-img{
     height:100px;
     width:100px;
-    border-radius:100%;
-    
-    
+    border-radius:100%;  
 }
-
 #name{
-    /* background:rgb(226, 209, 209); */
     text-decoration:none;
     justify-self: space-around;
     color:white;
@@ -88,34 +82,21 @@ nav{
 }
 
 .social-links{
-    /* width: 120px;
-    height: 50px; */
-    /* background:blue; */
     margin: 0 auto;
     padding:5px;
     display:flex;
     align-items: center;
     justify-content: center;
-    flex-direction:row;
-    /* align-items: center;
-    justify-items: center; */
-    
+    flex-direction:row; 
 }
 .social-links a
 {
     text-decoration: none;
     color: #ffffff;
-    /* font-size:20px; */
-   
-    /* transition: ease color 3s; */
 }
-
 .social-links a:hover{
-    /* color:rgb(82, 177, 255); */
-    color:var(--text-color);
-    
+    color:var(--text-color);   
 }
-
 .social-links i{
     font-size: 20px;
     text-decoration: none;
@@ -127,8 +108,6 @@ nav{
 
 .nav-menu{
     width:100%;
-    
-    /* background:yellow; */
     color:black;
     position:absolute;
     top:35%;
@@ -139,7 +118,6 @@ nav{
 }
 .nav-menu ul li{
     height:25px;
-    /* background:white; */
     margin-top:2%;
     padding:3%;
     text-align: left;
@@ -171,12 +149,9 @@ nav{
 
 .active{
     color:var(--text-color);
-    /* color:var(--main-color); */
-
 }
 
 .active-icon{
-    /* color:white; */
     color:var(--text-color);
 
 }
@@ -213,7 +188,6 @@ nav{
 .home{
     width:100%;
     height:100%;
-    /* background: chartreuse; */
     position:relative;
 
 }
@@ -230,8 +204,7 @@ nav{
     height:100%;
     background:rgba(0, 0, 0, 0.6);
     position:absolute;
-    top:0;
-    
+    top:0; 
 }
 .text-container{
     position:absolute;
@@ -388,19 +361,15 @@ nav{
  /* skills  */
  .skill{
     width:100%;
-    /* background:  rgb(255, 162, 162); */
     display: flex;
     flex-direction: column;
     position:relative;
     top:4%;
-    background:rgb(240, 241, 255);
-    
-   
+    background:rgb(160, 160, 160);
 }
 
  .skills
 {
-    background:rgb(240, 241, 255);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -409,7 +378,7 @@ nav{
 }
 .skills .card
 {
-    background-color: #41444499;
+    background-color: #d6d0d0;
     height: 320px;
     width: 240px;
     margin: 10px;
@@ -418,6 +387,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    border : inset 4px rgb(236, 234, 234);
 }
 .card svg
 {
@@ -503,7 +473,7 @@ svg #linux
 svg #c
 {
     stroke-dashoffset: calc(440 - (440 * 80) / 100);
-    stroke:#cdc6c6;
+    stroke:#fffc4f;
     stroke-dasharray: 440;
 }
 svg #photoshop
