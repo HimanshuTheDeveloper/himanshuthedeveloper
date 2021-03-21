@@ -75,7 +75,7 @@ const changeHamburgerState = (event) => {
         
 
         if(window.innerWidth < 900){
-            nav.style.width = '75%';
+            nav.style.width = '50%';
             main.width = '100%';
         }
         else{
@@ -129,7 +129,7 @@ const changeHamburgerState = (event) => {
             }
             else
             {
-                items[key].style.transform = 'translateX(5px)';
+                items[key].style.transform = 'translateX(25px)';
                 items[key].innerHTML = '<i class="fa fa-bars"></i>';
 
             }
