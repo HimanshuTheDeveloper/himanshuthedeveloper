@@ -8,7 +8,7 @@
     nav ul{
       
         padding: 0px;
-        background:rgba(0, 0, 0, 0.322);
+        background:none;
         margin:0;
         z-index:8;
         /* display:none; */
@@ -19,7 +19,7 @@
         font-size:10px;
         padding: 1%;
         height: 25px;
-        /* background: white; */
+        background:none;
         margin-top: 0;
         padding: 1%;
         text-align: center;
