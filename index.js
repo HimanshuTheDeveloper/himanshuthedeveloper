@@ -1,30 +1,3 @@
-// const nav = document.querySelector('nav');
-// const hem = document.querySelector('#hamburger');
-// const navItem = document.querySelectorAll('.navItem');
-
-// hem.addEventListener('click', ()=>{
-//     console.log(hem.innerText);
-//     if(hem.innerText == "☰")
-//     {
-//         hem.innerText = '✖';
-//         navItem.forEach((element)=>{
-//             element.style.height = '60px';
-//             element.style.opacity = '1';
-//             element.style.pointerEvents = 'all';
-//         });
-//     }
-//     else
-//     {
-//         hem.innerText = '☰';
-//         navItem.forEach((element)=>{
-//             element.style.height = '0';
-//             element.style.opacity = '0';
-//             element.style.pointerEvents = 'none';
-//         });
-//     } 
-// });
-
-
 const roles = [
     "Freelancer",
     "Programmer",
@@ -75,7 +48,7 @@ const changeHamburgerState = (event) => {
         
 
         if(window.innerWidth < 900){
-            nav.style.width = '50%';
+            nav.style.width = '75%';
             main.width = '100%';
         }
         else{
@@ -140,18 +113,3 @@ const changeHamburgerState = (event) => {
 
 document.querySelector('#hamburger').addEventListener('click', changeHamburgerState);
 
-// if(window.innerWidth < 900){
-//     let navItem = document.querySelectorAll('.nav-menu ul li');
-
-
-//     Object.keys(navItem).forEach(function(key) {
-//         let item = navItem[key];
-//         setTimeout(()=>{
-
-//             item.addEventListener('click', changeHamburgerState);
-//         }, 1000);
-
-//     });
-
-    
-// }

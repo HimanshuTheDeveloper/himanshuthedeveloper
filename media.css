@@ -147,6 +147,9 @@
     {
         font-size: 30px;
     }
+    .about .box-1 img{
+        margin-left: 25%;
+    }
 }
 @media screen and (max-width: 500px)
 {
@@ -162,6 +165,7 @@
     {
         height: 50vw !important;
     }
+    
 }
 @media screen and (max-width: 375px)
 {

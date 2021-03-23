@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container" id="home">
@@ -69,17 +70,17 @@
                                 <div class="col">
                                   <ul>
                                     <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Birthday  :</strong><span class="span-desc">13 Oct 1999</span> </li>
-                                    <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Age       :</strong> <span class="span-desc">21</span></li>
-                                    <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Phone     :</strong><span class="span-desc">+91 9990 207601</span></li>
-                                    <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Website   :</strong> <span class="span-desc">https://github.com/HimanshuTheDeveloper</span></li>
+                                    <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Age       :</strong> <span class="span-desc" id="ageYear" ></span></li>
+                                    <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Qualification    :</strong> <span class="span-desc">BCA</span></li>
+                                    <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Phone     :</strong><span class="span-desc">+91 9625911567</span></li>
                                 </ul>
                             </div>
                             <div class="col">
                                 <ul>
                                     <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Language :</strong> <span class="span-desc">English, Hindi</span></li>
-                                    <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Qualification    :</strong> <span class="span-desc">BCA</span></li>
                                     <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">City      :</strong> <span class="span-desc">Delhi, India</span></li>
                                     <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Email  :</strong><span class="span-desc"> himanshu32301@gmail.com</span></li>
+                                    <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong class="strong-desc">Website   :</strong> <span class="span-desc">https://github.com/HimanshuTheDeveloper</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -100,28 +101,28 @@
                         <circle id="html" cx="70" cy="70" r="70"></circle>
                     </svg>
                     <span class="percent">90%</span>
-                    <div class="skillName"><i class="fab fa-html5"></i>&nbsp; HTML</div>
+                    <div class="skillName"><i class="fa fa-html5" aria-hidden="true"></i>&nbsp; HTML</div>
                 </div>
                 <div class="card">
                     <svg>
                         <circle id="css"cx="70" cy="70" r="70"></circle>
                     </svg>
                     <span class="percent">90%</span>
-                    <div class="skillName"><i class="fab fa-css3-alt"></i>&nbsp; CSS</div>
+                    <div class="skillName"><i class="fa fa-css3" aria-hidden="true"></i>&nbsp; CSS</div>
                 </div>
                 <div class="card">
                     <svg>
                         <circle id="javaScript"cx="70" cy="70" r="70"></circle>
                     </svg>
                     <span class="percent">60%</span>
-                    <div class="skillName"><i class="fa fa-js-square"></i>&nbsp; JavaScript</div>
+                    <div class="skillName"><i class="fab fa-js-square"></i>&nbsp; JavaScript</div>
                 </div>
                 <div class="card">
                     <svg>
                         <circle id="php" cx="70" cy="70" r="70"></circle>
                     </svg>
                     <span class="percent">80%</span>
-                    <div class="skillName"><i class="fa fa-php"></i>&nbsp; PHP</div>
+                    <div class="skillName"><i class="fab fa-php"></i>&nbsp; PHP</div>
                 </div>
                 <div class="card">
                     <svg>
@@ -199,7 +200,22 @@
                         <circle id="vue" cx="70" cy="70" r="70"></circle>
                     </svg>
                     <span class="percent">20%</span>
-                    <div class="skillName"></i> &nbsp; Vue.js</div>
+                    <div class="skillName"></i> &nbsp; VueJs</div>
+                </div>
+
+                <div class="card">
+                    <svg>
+                        <circle id="django" cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <span class="percent">30%</span>
+                    <div class="skillName"></i> &nbsp; Django</div>
+                </div>
+                <div class="card">
+                    <svg>
+                        <circle id="react" cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <span class="percent">50%</span>
+                    <div class="skillName"></i> &nbsp; ReactJs</div>
                 </div>
               
                
@@ -334,6 +350,10 @@
             </div>
         </div>
         <!-- End projects -->
+        <div class="contact" id="contact">
+           <h1>Contact Page Not Found</h1>
+           
+        </div>
         
         <!-- </div> -->
         
@@ -345,9 +365,13 @@
 </body>
 <script src="./index.js"></script>
 <script>   
-    setInterval(()=>{
-    changeRole();
-}, 4000);
+        setInterval(()=>{
+        changeRole();
+    }, 4000);
+
+    var today = new Date();
+    var age = today.getFullYear() - 1999;
+    document.getElementById('ageYear').innerText = age;
 
     </script>
 </html>
